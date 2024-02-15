@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>Auto Gold Hen 2.4b16.2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body 
+        html, body {
+        background-image: url('900.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #24272b;
+        color: white;
+        text-align: center;
+        margin: 0px;
+        overflow: hidden;
+        }
+
+        .loader 
+        {
+            position: absolute;
+            left: 50%;
+            top: 38%;
+            margin: -75px 0 0 -75px;
+            border: 10px solid #1f1e1e;
+            border-radius: 50%;
+            border-top: 10px solid #0618d4;
+            border-left: 10px solid #0618d4;
+            width: 120px;
+            height: 120px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin 
+        {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .info 
+        {
+            overflow: hidden;
+            position: fixed;
+            position: absolute;
+            top: 53%;
+            left: 50%;
+
+            font-size: 25px;
+            font-family: sans-serif;
+            color: #fcfafa;
+
+            transform: translate(-50%, -50%);
+        }
+
+        .j {
+            font-size: 15px;
+            color: #fcfafa;
+        }
+		
+		h1 {
+		text-shadow: 0.1em 0.1em 0.2em black;
+		font-size: 25px;
+		text-align: center;
+		color: white;
+		}
+
+		.TextCaption{
+		display: block;
+		font-size: 20px;
+  		color: #fff;
+   		text-decoration: none;
+		}
+    </style>
+<script>if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+
+
+        window.applicationCache.onnoupdate=function(){setTimeout(webkitExploit,500);};
+	    window.applicationCache.onerror=function(){setTimeout(webkitExploit,500);};
+
+        function allset() 
+        {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("allset").style.display = "block";
+        }
+    </script>
+    <script src="exploit.js"></script>
+</head>
+    <div id="loader" class="loader"></div>
+    <div id="allset" class="info" style="display:none;">بنجاح اغلق متصفح Gold hen 2.4b16.2 تم تحميل حمولة</div>
+</html>
